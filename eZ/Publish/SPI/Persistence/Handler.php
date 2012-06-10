@@ -55,6 +55,16 @@ interface Handler
     public function sectionHandler();
 
     /**
+     * @return \eZ\Publish\SPI\Persistence\Content\UrlAlias\Handler
+     */
+    public function urlAliasHandler();
+
+    /**
+     * @return \eZ\Publish\SPI\Persistence\Content\UrlWildcard\Handler
+     */
+    public function urlWildcardHandler();
+
+    /**
      */
     public function beginTransaction();
 
